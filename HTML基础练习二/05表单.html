@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>05表单</title>
+</head>
+<body>
+	<form action="1.php" method='past'>
+	<fieldset>
+		<ledeng>分组信息</ledeng>
+							<!--文本输入框（text） readonly='readonly'是只读状态 -->
+		用户名:     <input type='text' name='usename' maxlength='6' value='文本框里面默认显示的文字' > <br>
+
+								<!-- 密码框（password） -->
+		密&nbsp;码: <input type='password' name='password'> <br>
+
+        				<!--单选框（radio） name设置相同时才能实现单选 checked是默认选项-->
+        <input type='radio' name='generman' checked='checked'>男 
+        <input type='radio' name='generman' >女   <br>
+
+	  <!-- 下拉列表（select/optgroup/option）optgroup是下拉列表的分组 option是下拉列表的选项    -->
+			<!-- multiple='multiple'将下拉列表设置为多选项 selected='seleccted'是默认选中项' label是分组名称-->
+ 
+		国家：<select>        <!-- 单选下拉列表 -->
+			  <option>美国</option>
+			  <option>英国</option>
+			  <option selected='selected'>中国</option>
+			  </select> 
+			
+			  <select multiple='multiple'>   <!-- 多选下拉列表 -->
+			  	<option>美国</option>
+			  	<option>英国</option>
+			  	<option>中国</option>
+			  </select>
+
+	  	省：<select>
+	  			<optgroup label='中国'>
+	  			<option>陕西</option>
+	  			<option>河北</option>
+	  			<option>湖北</option>
+	  			</optgroup>	
+	  			<optgroup label='美国'>
+	  			<option>陕西</option>
+	  			<option>河北</option>
+	  			<option>湖北</option>
+	  			</optgroup>	
+
+	  		</select>		<br>
+
+					<!-- 多选框（checkbox） 默认选项为checked -->
+	  		<input type='checkbox' checked='checked'> 喝酒
+	  		<input type='chechbox' checked='checked'> 抽烟
+	  		<input type='checkbox'  checked='checked'> 烫头   <br>
+
+				<!-- 多行文本输入框（textarea） cols代表列 rows代表行 -->
+	  		<textarea cols="30" rows="10"></textarea>  <br>
+
+	  			<!-- 文件上传控件 -->
+	  		<input type='file'>   <br>
+
+	  		<!-- 文件提交按钮 -->
+	  		<input type='submit'> <br>
+
+	  		<!--图片按钮 -->
+	  		<!-- <input type='imang' src='图片的路径'>   --><br>
+
+	  		<!--重置按钮 -->
+	  		<input type='reset'>
+
+	  	</fieldset>
+
+	</form> 
+</body>
+</html>

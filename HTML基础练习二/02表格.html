@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>02表格</title>
+</head>
+<body><!--table表明表格开始；tr设置表格的行；td设置表格的列 ；th设置标题栏位；-->
+	<table border="2"  bordercolor ='red'cellspacing='0' cellpadding='2' bgcolor ='green' width="300" height='300'>
+
+	
+	<thead> 	             <!--表头区-->
+	  <tr>    <th>姓名</th>  <th>性别</th>  <th>学号</th>  <th>身份</th>        </tr>  
+	</thead>	 
+	
+	<tbody>                 <!--表体区-->            
+	  <tr>   <td>杜秦芝</td> <td>女</td>  <td>32</td>  <td rowspan ='2' >老师</td> </tr>  <!--rowspan是向下扩展栏位-->
+	  <tr>   <td valign='top'>秦芝</td>  <td>女</td>    <td>32</td>                  </tr>
+	  <tr>   <td>芝</td>    <td>女</td>    <td>32</td>   <td>学生</td>  </tr>
+	  <tr>   <td colspan ='2'>杜</td>      <td>32</td>   <td>学生</td>  </tr>   <!--colspan是向两边扩展栏位-->
+	 </tbody>
+
+
+	 <tfoot>                <!--表尾区-->
+	  <tr>     <td colspan = '4' align ='center'>拆分合并单元格  </td>       </tr>
+	 </tfoot>
+	</table>
+
+
+</body>
+</html>
